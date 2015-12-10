@@ -3,7 +3,7 @@ var fs = require('fs'),
     url = require('url'),
     util = require('util'),
     http = require('http'),
-    redis = require('./redis'),
+    redis = require('redis'),
     client = redis.createClient();
 
 // start server
