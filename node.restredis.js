@@ -50,7 +50,7 @@ function doGet(request, response){
         default:
             client.get(key, function(err, val){
                 if(val === null){
-                    respond(request, response, 404, 'Specified key does not exists.');
+                    respond(request, response, 404, 'Specified key does not exist');
                 } else {
                     respond(request, response, 200, val);
                 }
@@ -77,7 +77,7 @@ function doPost(request, response){
                     }
                 });
             } else {
-                respond(request, response, 400, 'Specified key already exists.');
+                respond(request, response, 400, 'Specified key already exist');
             }
         });
     });
@@ -102,7 +102,7 @@ function doPut(request, response){
                     }
                 });
             } else {
-                respond(request, response, 404, 'Specified key does not exist.');
+                respond(request, response, 404, 'Specified key does not exist');
             }
         });
     });
@@ -121,7 +121,7 @@ function doDelete(request, response){
                 }
             });
         } else {
-            respond(request, response, 404, 'Specified key does not exist.');
+            respond(request, response, 404, 'Specified key does not exist');
         }
     });
 }
